@@ -1,0 +1,98 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,600;1,300&family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@keyframes color {
+    0% {
+        background: #FED9ED;
+    }
+
+    20% {
+        background: #E7BCDE;
+    }
+
+    40% {
+        background: #BB9CC0;
+    }
+
+    60% {
+        background: #BB9CC0;
+    }
+
+    80% {
+        background: #67729D;
+    }
+
+    100% {
+        background: #FED9ED;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.main-navbar {
+    width:100%;
+    padding: 1em;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: flex-end;
+    gap:2em; 
+}
+
+h3{
+    margin:0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+section.intro {
+    background: #FED9ED;
+    animation: color 10s infinite linear;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.intro div{
+    width:60%;
+    font-size: 2em;
+}
+
+/* about me */
+
+.about-me{
+    padding:2em;
+    height:100vh;
+    font-size: 2em;
+}
+
+.social{
+   text-align: center;
+   font-size: 1.5em;
+}
+
+.social a{
+    margin:0 1em;
+}
+
+.social a:hover i{
+    color:#67729D
+}
