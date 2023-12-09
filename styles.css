@@ -78,10 +78,11 @@ section.intro div{
 
 /* about me */
 
-.about-me{
+.about-me, 
+.projects{
     padding:2em;
     height:100vh;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .social{
@@ -95,4 +96,12 @@ section.intro div{
 
 .social a:hover i{
     color:#67729D
+}
+/* // */
+
+/* projects */
+
+.projects{
+    background-color: #FED9ED;
+
 }
