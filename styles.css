@@ -99,7 +99,8 @@ section.intro div{
 /* about me */
 
 .about-me, 
-.projects{
+.projects,
+.contact{
     padding:2em;
     height:100vh;
     font-size: 1.5em;
@@ -122,10 +123,57 @@ section.intro div{
 /* projects */
 .projects{
     background-color: #FED9ED;
-
 }
 
+/* contact form */
+.contact div{
+    display: flex;
+    justify-content: center;
+    margin:1em 0;
+}
 
+#contactForm{
+    width:70%;
+    padding:1em;
+    border: 3px solid #67729D;
+    border-radius: 5px;
+}
+
+#contactForm label{
+    display: block;
+    margin-top:1em;
+}
+
+#contactForm input, 
+textarea{
+    font-size: 1em;
+    padding:1em;
+    font-family:'Work Sans', sans-serif;
+    border-radius:5px;
+    border: 3px solid #67729D ;
+    width:100%;
+    outline: none;
+}
+
+#contactForm button{
+    display: block;
+    padding:1.5em;
+    font-family: 'Work Sans', sans-serif; 
+    font-weight: 500;
+    color:#0c0b0b;
+    background-color: #fff;
+    border:3px solid #67729D ;
+    border-radius: 5px;
+    cursor:pointer;
+    width:100%;
+    margin:1em auto;
+}
+
+#contactForm button:hover{
+    background-color: #67729D;
+    color:#fff;
+}
+/* // */
 
 /* media queries */
 @media all and (max-width: 750px) {
@@ -141,7 +189,6 @@ section.intro div{
         top:0;
         right:0;
     }
-
     .main-navbar ul{
         text-align: right;
         padding-top:1em;
@@ -152,6 +199,10 @@ section.intro div{
     }
     nav.background{
         bottom:0;
-        background-color: #67729D;
+        background-color: #ffffffee;
+    }
+
+    p{
+        font-size: 0.9em;
     }
 }

@@ -26,7 +26,7 @@
     </header>
 
     <a name="home"></a>
-    <section class="intro">
+    <section class="intro"><!--  introduction  -->
         <div>
             <h3>Hi, I'm Sofia.|</h3>
             <p>I'm a junior front end developer, currently based in Italy.
@@ -34,7 +34,7 @@
             </p>
         </div>
     </section>
-    <section class="about-me" name="aboutMe">
+    <section class="about-me" name="aboutMe"><!-- about me  -->
         <h3><a name="aboutMe">About Me</a></h3>
         <div>
             <img src="" alt="">
@@ -45,20 +45,40 @@
                 culpa dolorum! Sequi fugiat itaque deserunt veritatis. Magni illo eaque maiores excepturi optio, aperiam
                 animi ullam dignissimos beatae adipisci.</p>
         </div>
-        <div class="social">
-            <a href="" target="_blank"><i class="bi bi-github"></i></a>
+        <div class="social"><!-- socials -->
+            <a href="https://github.com/sofiayhs" target="_blank"><i class="bi bi-github"></i></a>
             <a href="https://www.linkedin.com/in/sofiya-h-456227181/" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100011423956794" target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="" target="_blank"></a>
+            <a href="https://www.facebook.com/profile.php?id=100011423956794" target="_blank"><i
+                    class="bi bi-facebook"></i></a>
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects"> <!--  my projects -->
         <h3><a name="projects">Projects</a></h3>
         <div>
         </div>
     </section>
 
+    <section class="contact"> <!--  contact form -->
+        <h3><a name="contact">Contact</a></h3>
+        <div>
+            <form id="contactForm" action="">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="enter your name">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="enter your email">
+
+               <label for="message">Your message:</label> 
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <button type="button" onclick="sendEmail()">Send mail</button>
+            </form>
+        </div>
+    </section>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="pf.js"></script>
 </body>
 
