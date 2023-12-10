@@ -205,4 +205,8 @@ textarea{
     p{
         font-size: 0.9em;
     }
+
+    #contactForm{
+        width:100%;
+    }
 }
