@@ -47,14 +47,34 @@ a:hover{
     text-decoration: underline;
 }
 
+/* menu */
 .main-navbar {
     width:100%;
-    padding: 1em;
+    padding: 0.5em;
     font-size: 1.5em;
     display: flex;
-    justify-content: flex-end;
-    gap:2em; 
+    justify-content: flex-end; 
+
 }
+
+.main-navbar ul{
+    list-style: none;
+    padding:0;
+    display: flex;
+    gap:2em;
+}
+
+.btn-toggle{
+    position: absolute;
+    top:0;
+    right:0;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* // */
 
 h3{
     margin:0;
@@ -100,8 +120,40 @@ section.intro div{
 /* // */
 
 /* projects */
-
 .projects{
     background-color: #FED9ED;
+
+}
+
+
+
+/* media queries */
+@media all and (max-width: 750px) {
+    .btn-toggle{
+        display: block;
+    }
+    .main-navbar{
+       /*  height: 100%;
+        width:80%; */
+        padding:1em;
+        font-size: 2.5em;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: #fff;
+        position:fixed;
+        justify-content: right;
+        top:0;
+        right:0;
+    }
+
+    .main-navbar ul{
+        text-align: right;
+        margin-top:3em;
+        flex-direction: column;
+        
+    }
+    ul.visible{
+        display:none;
+    }
 
 }
