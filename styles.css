@@ -70,7 +70,7 @@ a:hover{
     right:0;
     font-size: 1.5em;
     cursor: pointer;
-    display: none;
+    opacity:0;
 }
 
 
@@ -130,16 +130,12 @@ section.intro div{
 /* media queries */
 @media all and (max-width: 750px) {
     .btn-toggle{
-        display: block;
+        opacity:1;
     }
     .main-navbar{
-       /*  height: 100%;
-        width:80%; */
-        padding:1em;
         font-size: 2.5em;
         font-weight: 700;
         text-transform: uppercase;
-        background-color: #fff;
         position:fixed;
         justify-content: right;
         top:0;
@@ -148,12 +144,14 @@ section.intro div{
 
     .main-navbar ul{
         text-align: right;
-        margin-top:3em;
+        padding-top:1em;
         flex-direction: column;
-        
     }
     ul.visible{
         display:none;
     }
-
+    nav.background{
+        bottom:0;
+        background-color: #67729D;
+    }
 }
