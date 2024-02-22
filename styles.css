@@ -47,6 +47,10 @@ a:hover{
     text-decoration: underline;
 }
 
+ul{
+    list-style: none;
+    padding:0;
+}
 /* menu */
 .main-navbar {
     width:100%;
@@ -58,8 +62,6 @@ a:hover{
 }
 
 .main-navbar ul{
-    list-style: none;
-    padding:0;
     display: flex;
     gap:2em;
 }
@@ -97,18 +99,17 @@ section.intro div{
 }
 
 /* about me */
-
-.about-me, 
 .projects,
-.contact{
+.contact,
+.about-me{
     padding:2em;
-    height:100vh;
+    height:auto;
     font-size: 1.5em;
 }
 
 .social{
    text-align: center;
-   font-size: 1.5em;
+   font-size: 2em;
 }
 
 .social a{
@@ -116,8 +117,26 @@ section.intro div{
 }
 
 .social a:hover i{
-    color:#67729D
+    color:#FED9ED
 }
+
+.icons{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:3em;
+}
+.icons li img{
+    width:3em;
+    height:3em;
+    transition: 0.7s;
+    border-radius: 50%;
+}
+.icons li:hover img{
+    transform: scale(1.2);
+    box-shadow: 4px 6px 17px -6px #000000;
+}
+
 /* // */
 
 /* projects */
@@ -125,8 +144,19 @@ section.intro div{
     background-color: #FED9ED;
 }
 
+.container{
+    margin-top:4em;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 3em 3em 3em;
+    background-color: cadetblue;
+    gap: 3em;
+    height:40px;
+}
+
 /* contact form */
-.contact div{
+.contact div,
+.skills{
     display: flex;
     justify-content: center;
     margin:1em 0;
@@ -175,6 +205,14 @@ textarea{
 }
 /* // */
 
+/* footer */
+    footer{
+        background-color: #67729D;
+        width:100%;
+        padding:1em;
+        text-align: center;
+    }
+/* // */
 /* media queries */
 @media all and (max-width: 750px) {
     .btn-toggle{

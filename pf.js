@@ -26,5 +26,5 @@ function sendEmail() {
     From: "hamratsiysofia@gmail.com",
     Subject: "msg from Contact Form (portfolio)",
     Body: body,
-  }).then((message) => alert(message));
+  }).then((message) => alert("inviato " + message));
 }

@@ -10,6 +10,9 @@
     <!-- Bootstrap Font Icon CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
+    <!-- Google Font Icon CSS -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -18,9 +21,9 @@
             <a class="bi bi-list btn-toggle"></a>
             <ul class="visible">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Progetti</a></li>
                 <li><a href="#aboutMe">About me</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Contattami</a></li>
             </ul>
         </nav>
     </header>
@@ -28,9 +31,8 @@
     <a name="home"></a>
     <section class="intro"><!--  introduction  -->
         <div>
-            <h3>Hi, I'm Sofia.|</h3>
-            <p>I'm a junior front end developer, currently based in Italy.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, perferendis!
+            <h3>Hi, I'm Sofiya.|</h3>
+            <p>Sono un aspirante junior front end developer, con la passione di creare siti web coinvolgenti e user-friendly!
             </p>
         </div>
     </section>
@@ -38,29 +40,50 @@
         <h3><a name="aboutMe">About Me</a></h3>
         <div>
             <img src="" alt="">
-            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi alias, distinctio
-                dolores vitae perspiciatis atque ducimus fugit molestias, repellat quae aliquid id architecto sed
-                possimus, minima facere hic eos voluptates.</p>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequatur praesentium
-                culpa dolorum! Sequi fugiat itaque deserunt veritatis. Magni illo eaque maiores excepturi optio, aperiam
-                animi ullam dignissimos beatae adipisci.</p>
+            <div class="description">
+                <p>
+                    Diplomata nel 2021 in Amministrazione Finanza e Marketing (articolazione Sistemi Informativi
+                    Aziendali), decisi di entrare subito nel mondo del lavoro e contemporaneamente iniziare un percorso
+                    formativo nel campo dello Sviluppo Web.
+                </p>
+                <p>
+                    Attualmente sono in ricerca di opportunità per mettere a frutto le mie competenze in un team
+                    dinamico, dove posso contribuire, imparare e fare parte di entusiasmanti progetti web.
+                </p>
+                <h3>Skills</h3>
+                <div class="skills">
+                    <ul class="icons">
+                        <li><img src="icons/html.png" alt=""></li>
+                        <li><img src="icons/css.png" alt=""></li>
+                        <li><img src="icons/js.png" alt=""></li>
+                        <li><img src="icons/bootstrap.png" alt=""></li>
+                        <li><img src="icons/ng.png" alt=""></li>
+                        <li><img src="icons/responsive.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="social"><!-- socials -->
-            <a href="https://github.com/sofiayhs" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/sofiya-h-456227181/" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100011423956794" target="_blank"><i
-                    class="bi bi-facebook"></i></a>
-        </div>
+
     </section>
 
     <section class="projects"> <!--  my projects -->
-        <h3><a name="projects">Projects</a></h3>
-        <div>
+        <h3><a name="projects">Progetti</a></h3>
+        <div class="container text-center">
+            <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div>
         </div>
+
     </section>
 
     <section class="contact"> <!--  contact form -->
-        <h3><a name="contact">Contact</a></h3>
+        <h3><a name="contact">Contattami</a></h3>
         <div>
             <form id="contactForm" action="">
                 <label for="name">Name</label>
@@ -69,13 +92,23 @@
                 <label for="email">Email</label>
                 <input type="text" name="email" id="email" placeholder="enter your email">
 
-               <label for="message">Your message:</label> 
+                <label for="message">Your message:</label>
                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
 
                 <button type="button" onclick="sendEmail()">Send mail</button>
             </form>
         </div>
     </section>
+
+    <footer>
+        <div class="social" style="margin-top:1em;"><!-- social -->
+            <a href="https://github.com/sofiayhs" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/sofiya-h-456227181/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <!--  <a href="https://www.facebook.com/profile.php?id=100011423956794" target="_blank"><i
+                    class="bi bi-facebook"></i></a> -->
+        </div>
+        <p> &copy; Sofiya Hamratsiy</p>
+    </footer>
 
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
